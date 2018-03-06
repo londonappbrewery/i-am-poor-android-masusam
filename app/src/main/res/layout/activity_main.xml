@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,4 +10,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        tools:layout_alignParentBottom="false"
+        tools:layout_alignStart="@+id/50sp"
+        tools:layout_marginTop="0dp"
+        tools:textColor="@android:color/background_dark"
+        tools:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/coal"
+        tools:contentDescription="coal" />
 </RelativeLayout>
